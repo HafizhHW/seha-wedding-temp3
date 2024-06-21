@@ -1,0 +1,770 @@
+:root{
+    --orange:#F9B572;
+    --sage-dark:#99B080;
+    --sage-light:#B5C18E;
+    --lighter:#FAF8ED;
+    --shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+body{
+    font-size: 1.3rem;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+    /* background: var(--sage-dark); */
+    /* min-height: 10000px; */
+}
+
+/* HERO START */
+
+.hero::before{
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1563808599481-34a342e44508?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center -8rem;
+    filter: grayscale(40%);
+    /* filter: drop-shadow(10%); */
+    z-index: -2;
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    text-shadow: var(--shadow);
+    z-index: 1;
+    /* padding: 53px 53px 53px 53px; */
+}
+
+
+/* .hero .card-img-overlay{
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1563808599481-34a342e44508?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: auto;
+    min-height: 100vh;
+} */
+
+.img-top{
+    width: 500px;
+    height: 500px;
+    /* margin-top: -1rem; */
+    margin-left: -0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 5s infinite alternate;
+    transform-origin: top left;
+    z-index: -1;
+    /* animation: shake 0.8s infinite alternate; */
+}
+
+.img-bottom{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 1px;
+    margin-right: -0.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: rotate 5s infinite alternate;
+    transform-origin: bottom right;
+    z-index: -1;
+    /* animation: shake 0.8s infinite alternate; */
+}
+
+/* @keyframes shake {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-10px, 10px);
+    }
+  } */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg); /* Memutar gambar 90 derajat */
+  }
+}
+  
+.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a{
+    z-index: 1000;
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4.5rem;
+    /* padding-top: 2rem; */
+    font-weight: 500;
+}
+
+.hero h2 {
+    font-size: 2.3rem;
+    /* padding-top: 10rem; */
+    padding-bottom: 3rem;
+}
+
+.hero h3 {
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+.hero h4 {
+    font-size: 1.9rem;
+    padding-top: 2rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    padding-top: 3rem
+}
+
+.hero a {
+    /* margin-top:1rem; */
+    /* padding-bottom: 5rem; */
+    /* align-items: center; */
+    /* width: 250px; */
+    border-radius: 10px;
+    color: var(--orange);
+    background-color: var(--lighter);
+    box-shadow: var(--shadow);
+    text-shadow: none;
+}
+
+.hero a:hover {
+    color: var(--lighter);
+    background-color: var(--orange);
+}
+  /* HERO END */
+
+  /* HOME START */
+.home::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1563808599481-34a342e44508?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center -8rem;
+    filter: grayscale(40%) blur(3px);
+    z-index: -2;
+    /* min-height: 100vh; */
+    /* top: 0; */
+    /* filter: drop-shadow(10%); */
+}
+
+.home{
+    position: relative;
+    color: white;
+    text-shadow: var(--shadow);
+    z-index: 1;
+    min-height: 100vh;
+    /* padding: 53px 53px 53px 53px; */
+  }
+
+.card-home{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: var(--sage-light);
+}
+
+.home h1 {
+     font-family: 'Sacramento', cursive;
+     font-size: 5rem;
+     padding-top: 4rem;
+     padding-bottom: 1.7rem;
+     color: var(--orange);
+    }
+    
+.home h2{
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.home h3{
+    font-size: 1.7rem;
+    padding-top: 2rem;
+}
+
+.home p{
+    padding: 2rem 4rem ;
+    font-size: 1.2rem;
+}
+
+.cropper {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    background-size: cover;
+    background-position: center 0 0;
+    background-image: url(https://images.unsplash.com/photo-1563808599481-34a342e44508?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.home .simply-countdown>.simply-section :hover {
+  color: var(--orange);
+}
+
+.home a {  
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(46, 46, 46, 0.8);
+  text-shadow: none;
+  box-shadow: var(--shadow);
+}
+
+.home a:hover{
+  color: var(--orange);
+}
+
+/* .cropper>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    filter: grayscale(90%);        
+} */
+
+
+/* HOME END */
+
+
+/* COUPLE START */
+
+/* Set image width to 100% of its container */
+
+  .couple .col-md-6 {
+    max-width: 50%;
+    height: 700px;
+    padding: 0; 
+    margin: 0; 
+    position: relative; 
+  }
+
+  .couple .man .card{
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(46, 46, 46, 0.8);
+    padding: 10px;
+    text-align: center; 
+    font-size: 1rem;
+    position: absolute;
+    text-align: end;
+    bottom: 50px;
+    right:0;
+    height: 120px;
+  }
+
+  .couple .woman .card{
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(46, 46, 46, 0.8);
+    padding: 10px;
+    text-align: center; 
+    font-size: 1rem;
+    position: absolute;
+    text-align: start;
+    bottom: 50px;
+    left: 0;
+    height: 120px;
+  }
+
+  .couple .man::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1504642635227-12ab2b71b540?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);    
+    z-index: -1;
+  }
+
+  .couple .woman::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1482482097755-0b595893ba63?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    z-index: -1;
+  }
+  
+  
+.couple{
+    position: relative;
+    min-height: 100vh;
+    /* background-color:transparent; */
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.woman h1{
+  font-size: 3.4rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.man h1{
+  font-size: 3.4rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  text-align: end;
+}
+
+.man h2, .woman h2{
+  font-size: 2rem;
+}
+
+.man p,.woman p{
+  font-size: 1.6rem;
+}
+
+
+/* .couple .basmalah{
+    width: 25rem;
+    padding-top: 3rem;
+}
+
+.couple::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F7DCB9;
+    background-image: url(https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(40%);
+    z-index: -1;
+}
+
+.couple {
+    position: relative;
+    min-height: 100vh;
+    text-shadow: var(--shadow);
+    color: white;
+    
+}
+
+
+/* COUPLE END */
+
+
+/* EVENT START */
+
+.event-header{
+  text-align: center;
+  background-color: var(--sage-light);
+}
+
+.event-header p {
+  font-weight: 500;
+  padding-top: 1.5rem;
+  color: black;
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+}
+
+.event-header h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: var(--orange);
+  padding-top: 2rem;
+ }
+
+
+.event table, td {
+  padding: 1.5rem;
+  margin: 2rem;
+  font-size: 1.6rem;
+}
+
+.event td{ 
+  color:black;
+}
+
+.akad-resepsi {
+  background-color: var(--sage-light) !important;
+  font-size: 3rem;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  }
+
+.event {
+  position: relative;
+  min-height: 100vh;
+  color: white;
+  z-index: 1;
+  background-color: white;
+  /* padding: 2rem;     */
+}
+
+.tgl{
+  font-size: 2.8rem;
+}
+
+.event a {
+  color: var(--sage-light);
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
+}
+
+.event a:hover {
+    color: white;
+    background-color: var(--sage-light);
+}
+
+/* .event::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/weeding-gate.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(4px) brightness(70%);
+  z-index: -1;
+}
+
+.event {
+  position: relative;
+  min-height: 100vh;
+  color: white;
+  text-shadow: var(--shadow);
+  z-index: 1;
+  background-color: var(--sage-dark);    
+} */
+
+
+/* EVENT END */
+
+/* GALLERY START */
+
+.gallery::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/weeding-gate.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(2px) brightness(70%);
+  z-index: -1;
+}
+
+.gallery {
+  position: relative;
+  /* background-color: var(--sage-light); */
+  min-height: 100vh;
+  padding: 2rem;    
+  text-shadow: var(--shadow);
+  z-index: 1;
+}
+
+.gallery h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: var(--orange);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+ }
+
+ 
+/* GALLERY END */
+
+/* GIFT START */
+
+.gift {
+  min-height: 100vh;
+  background-color: var(--sage-light);
+  padding: 2rem;
+}
+
+.gift h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: var(--orange);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-shadow: var(--shadow);
+}
+
+.gift h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.gift p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+.gift .card {
+  font-size: 1.4rem !important;
+  font-weight: 400;
+  color: black;
+  margin: 2rem;
+  background-color: var(--lighter);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  /* border-radius: 15px 50px 30px; */
+}
+
+.gift .card button{
+  margin-right: 2rem;
+  margin-top: -4rem;
+  text-align: end;
+}
+
+.gift .card img{
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.norek,.owner{
+  font-size: 1rem !important;
+}
+
+/* GIFT END */
+
+/* RSVP START */
+
+.rsvp{
+  min-height: 100vh;
+  background-color: var(--sage-light);
+}
+
+.rsvp h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: var(--orange);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-shadow: var(--shadow);
+}
+
+.rsvp .card{
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+/* RSVP END */
+
+.audio-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 8rem;
+  right: 3rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  z-index: 10;
+}
+
+@keyframes rotating {
+from {
+    transform: rotate(0);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
+
+
+ /* Media Query */
+
+  /* Extra Large */
+  @media(max-width: 1200px) {
+    
+
+   
+
+}
+
+  /* Laptop */
+  @media(max-width: 992px) {
+
+      html {
+          font-size: 75%;
+      }
+
+      .img-top{
+        width: 270px;
+        height: 270px;
+      }
+
+      .img-bottom{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 1px;
+      }
+
+   
+    
+  }
+
+  /* Tablet */
+  @media(max-width: 768px) {
+
+      html {
+          font-size: 65%;
+      }
+
+      .hero .card{
+        background-position: center 0;
+      }
+
+      .img-top{
+        width: 230px;
+        height: 230px;
+        /* margin: -8rem -8rem; */
+      }
+
+      .img-bottom{
+        width: 230px;
+        height: 230px;
+        margin-bottom: 1px;
+      }
+
+      .card-home{
+        margin-top: 10rem;
+      }
+
+  }
+
+  /* Mobile Phone */
+  @media(max-width: 576px) {
+
+      html {
+          font-size: 60%;
+      }
+
+        
+      .img-top{
+        width: 210px;
+        height: 210px;
+        /* margin: -8rem -8rem; */
+      }
+
+      .img-bottom{
+        width: 210px;
+        height: 210px;
+        margin-bottom: 1px;
+        /* margin: -8rem -8rem; */
+      }
+
+      .hero::before{
+        background-position: center 0;
+      }
+
+      .couple .spouse .woman{
+        margin-top: 2rem;
+      }
+
+      .couple .spouse{
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      .card-home{
+        margin-top: 10rem;
+      }
+
+      .event h1 {
+        font-size: 4.7rem;
+      }
+
+    .couple .col-md-6 {
+        max-width: 100%; 
+      }
+
+    .couple .man .card{
+      height: 150px;
+      width: 400px;
+      font-size: 1.8rem;
+      bottom: 30px;
+      left: 45%;
+      transform: translateX(-50%);
+    }
+
+    .couple .woman .card{
+      height: 150px;
+      width: 400px;
+      font-size: 1.8rem;
+      bottom: 30px;
+      left: 55%;
+      transform: translateX(-50%);
+    }
+
+    .man h2, .woman h2{
+      font-size: 3.2rem;
+    }
+    
+    .man p,.woman p{
+      font-size: 1.8rem;
+      /* padding-top: 1.2rem; */
+    }
+
+    .home .simply-countdown>.simply-section {
+      /* margin-top: 15rem; */
+    }
+
+  }
+
+  @media(max-width: 435px) {
+
+      .hero h1 {
+          font-size: 4.5rem;
+      }
+      
+      .hero .card{
+        background-position: center 0;
+      }
+
+      
+  }
